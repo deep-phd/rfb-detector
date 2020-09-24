@@ -1,0 +1,89 @@
+prior box infos:  {'min_boxes_base': [[16, 24], [32, 48], [64, 96], [128, 192, 256, 320]], 'aspect_ratios': [[2], [2, 3, 4], [2, 3, 4], [2]]}
+w_ssd: [[16, 11.31370849898476, 22.627416997969522, 24, 16.97056274847714, 33.941125496954285], [32, 22.62741699796952, 45.254833995939045, 18.475208614068027, 55.42562584220407, 16.0, 64.0, 48, 33.94112549695428, 67.88225099390857, 27.71281292110204, 83.13843876330611, 24.0, 96.0], [64, 45.25483399593904, 90.50966799187809, 36.950417228136054, 110.85125168440814, 32.0, 128.0, 96, 67.88225099390856, 135.76450198781714, 55.42562584220408, 166.27687752661222, 48.0, 192.0], [128, 90.50966799187808, 181.01933598375618, 192, 135.7645019878171, 271.5290039756343, 256, 181.01933598375615, 362.03867196751236, 320, 226.2741699796952, 452.54833995939043]] 
+ h_ssd: [[16, 22.627416997969522, 11.31370849898476, 24, 33.941125496954285, 16.97056274847714], [32, 45.254833995939045, 22.62741699796952, 55.42562584220407, 18.475208614068027, 64.0, 16.0, 48, 67.88225099390857, 33.94112549695428, 83.13843876330611, 27.71281292110204, 96.0, 24.0], [64, 90.50966799187809, 45.25483399593904, 110.85125168440814, 36.950417228136054, 128.0, 32.0, 96, 135.76450198781714, 67.88225099390856, 166.27687752661222, 55.42562584220408, 192.0, 48.0], [128, 181.01933598375618, 90.50966799187808, 192, 271.5290039756343, 135.7645019878171, 256, 362.03867196751236, 181.01933598375615, 320, 452.54833995939043, 226.2741699796952]]
+2020-05-13 13:18:12,592 - root - INFO - inpu size :320
+feature_map_list:  [[40, 20, 10, 5], [30, 15, 8, 4]]
+shrinkage_list:  [[8.0, 16.0, 32.0, 64.0], [8.0, 16.0, 30.0, 60.0]]
+image_size:  [320, 240]
+min_boxes_w:  [[16, 11.31370849898476, 22.627416997969522, 24, 16.97056274847714, 33.941125496954285], [32, 22.62741699796952, 45.254833995939045, 18.475208614068027, 55.42562584220407, 16.0, 64.0, 48, 33.94112549695428, 67.88225099390857, 27.71281292110204, 83.13843876330611, 24.0, 96.0], [64, 45.25483399593904, 90.50966799187809, 36.950417228136054, 110.85125168440814, 32.0, 128.0, 96, 67.88225099390856, 135.76450198781714, 55.42562584220408, 166.27687752661222, 48.0, 192.0], [128, 90.50966799187808, 181.01933598375618, 192, 135.7645019878171, 271.5290039756343, 256, 181.01933598375615, 362.03867196751236, 320, 226.2741699796952, 452.54833995939043]]
+min_boxes_h:  [[16, 22.627416997969522, 11.31370849898476, 24, 33.941125496954285, 16.97056274847714], [32, 45.254833995939045, 22.62741699796952, 55.42562584220407, 18.475208614068027, 64.0, 16.0, 48, 67.88225099390857, 33.94112549695428, 83.13843876330611, 27.71281292110204, 96.0, 24.0], [64, 90.50966799187809, 45.25483399593904, 110.85125168440814, 36.950417228136054, 128.0, 32.0, 96, 135.76450198781714, 67.88225099390856, 166.27687752661222, 55.42562584220408, 192.0, 48.0], [128, 181.01933598375618, 90.50966799187808, 192, 271.5290039756343, 135.7645019878171, 256, 362.03867196751236, 181.01933598375615, 320, 452.54833995939043, 226.2741699796952]]
+priors nums:12760
+2020-05-13 13:18:12,657 - root - INFO - Use Cuda.
+2020-05-13 13:18:12,658 - root - INFO - Namespace(balance_data=False, base_net='./models/pretrained/VOC-net-2-RFB-Epoch-722-Loss-5.2695.pth', base_net_lr=0.0001, batch_size=24, checkpoint_folder='./models', cuda_index='1', dataset_type='voc', datasets='training_data', debug_steps=50, extra_layers_lr=None, freeze_base_net=False, freeze_net=False, gamma=0.1, input_size=320, iou_threshold=0.34999999404, log_dir='./models/log', lr=0.01, milestones='150', momentum=0.9, net='RFB', num_epochs=200, num_workers=4, optimizer_type='SGD', overlap_threshold=0.34999999404, power=2, pretrained_ssd=None, resume=None, scheduler='multi-step', t_max=120, use_cuda=True, validation_dataset='training_data', validation_epochs=2, weight_decay=0.0005)
+2020-05-13 13:18:12,659 - root - INFO - Prepare training datasets.
+training_data
+self.root:  training_data
+image_sets_file:  training_data/ImageSets/Main/trainval.txt
+2020-05-13 13:18:12,659 - root - INFO - VOC Labels read from file: ('BACKGROUND', 'airplane', 'bicycle', 'bird', 'boat', 'bus', 'car', 'dog', 'motorcycle', 'panther', 'tiger', 'watch', 'glasses', 'mobilephone', 'bikini', 'bottle')
+num_classes:  16
+2020-05-13 13:18:12,659 - root - INFO - Stored labels into file ./models/voc-model-labels.txt.
+2020-05-13 13:18:12,659 - root - INFO - Train dataset size: 14
+2020-05-13 13:18:12,659 - root - INFO - Prepare Validation datasets.
+training_data
+self.root:  training_data
+image_sets_file:  training_data/ImageSets/Main/test.txt
+2020-05-13 13:18:12,659 - root - INFO - VOC Labels read from file: ('BACKGROUND', 'airplane', 'bicycle', 'bird', 'boat', 'bus', 'car', 'dog', 'motorcycle', 'panther', 'tiger', 'watch', 'glasses', 'mobilephone', 'bikini', 'bottle')
+2020-05-13 13:18:12,659 - root - INFO - validation dataset size: 200
+2020-05-13 13:18:12,659 - root - INFO - Build network.
+prior_nums in create_mb_tiny_fd:  [6, 14, 14, 12]
+2020-05-13 13:18:12,670 - root - INFO - Init from base net ./models/pretrained/VOC-net-2-RFB-Epoch-722-Loss-5.2695.pth
+2020-05-13 13:18:12,722 - root - INFO - Took 0.05 seconds to load the model.
+2020-05-13 13:18:14,609 - root - INFO - use gpu :[1]
+2020-05-13 13:18:14,610 - root - INFO - Learning rate: 0.01, Base net learning rate: 0.0001, Extra Layers learning rate: 0.01.
+2020-05-13 13:18:14,610 - root - INFO - Uses MultiStepLR scheduler.
+2020-05-13 13:18:14,610 - root - INFO - Start training from epoch 0.
+.2020-05-13 13:18:16,696 - root - INFO - epoch: 0 lr rate :0.0001
+2020-05-13 13:18:16,696 - root - INFO - validation epoch: 0 lr rate :0.0001
+2020-05-13 13:18:18,304 - root - INFO - Epoch: 0, Validation Loss: 23.0790, Validation Regression Loss 5.4640, Validation Classification Loss: 17.6150
+2020-05-13 13:18:18,339 - root - INFO - Saved model ./models/RFB-Epoch-0-Loss-23.0790.pth
+.2020-05-13 13:18:19,217 - root - INFO - epoch: 1 lr rate :0.0001
+.2020-05-13 13:18:20,039 - root - INFO - epoch: 2 lr rate :0.0001
+2020-05-13 13:18:20,039 - root - INFO - validation epoch: 2 lr rate :0.0001
+2020-05-13 13:18:21,498 - root - INFO - Epoch: 2, Validation Loss: 22.6621, Validation Regression Loss 5.4550, Validation Classification Loss: 17.2071
+2020-05-13 13:18:21,508 - root - INFO - Saved model ./models/RFB-Epoch-2-Loss-22.6621.pth
+.2020-05-13 13:18:22,334 - root - INFO - epoch: 3 lr rate :0.0001
+.2020-05-13 13:18:23,153 - root - INFO - epoch: 4 lr rate :0.0001
+2020-05-13 13:18:23,153 - root - INFO - validation epoch: 4 lr rate :0.0001
+2020-05-13 13:18:24,622 - root - INFO - Epoch: 4, Validation Loss: 22.2961, Validation Regression Loss 5.4409, Validation Classification Loss: 16.8551
+2020-05-13 13:18:24,632 - root - INFO - Saved model ./models/RFB-Epoch-4-Loss-22.2961.pth
+.2020-05-13 13:18:25,528 - root - INFO - epoch: 5 lr rate :0.0001
+.2020-05-13 13:18:26,414 - root - INFO - epoch: 6 lr rate :0.0001
+2020-05-13 13:18:26,414 - root - INFO - validation epoch: 6 lr rate :0.0001
+2020-05-13 13:18:27,859 - root - INFO - Epoch: 6, Validation Loss: 21.9950, Validation Regression Loss 5.4232, Validation Classification Loss: 16.5718
+2020-05-13 13:18:27,869 - root - INFO - Saved model ./models/RFB-Epoch-6-Loss-21.9950.pth
+.2020-05-13 13:18:28,696 - root - INFO - epoch: 7 lr rate :0.0001
+.2020-05-13 13:18:29,586 - root - INFO - epoch: 8 lr rate :0.0001
+2020-05-13 13:18:29,586 - root - INFO - validation epoch: 8 lr rate :0.0001
+2020-05-13 13:18:31,064 - root - INFO - Epoch: 8, Validation Loss: 21.6621, Validation Regression Loss 5.4027, Validation Classification Loss: 16.2594
+2020-05-13 13:18:31,074 - root - INFO - Saved model ./models/RFB-Epoch-8-Loss-21.6621.pth
+.2020-05-13 13:18:31,868 - root - INFO - epoch: 9 lr rate :0.0001
+.2020-05-13 13:18:32,701 - root - INFO - epoch: 10 lr rate :0.0001
+2020-05-13 13:18:32,701 - root - INFO - validation epoch: 10 lr rate :0.0001
+2020-05-13 13:18:34,194 - root - INFO - Epoch: 10, Validation Loss: 21.3588, Validation Regression Loss 5.3807, Validation Classification Loss: 15.9781
+2020-05-13 13:18:34,204 - root - INFO - Saved model ./models/RFB-Epoch-10-Loss-21.3588.pth
+.2020-05-13 13:18:35,049 - root - INFO - epoch: 11 lr rate :0.0001
+.2020-05-13 13:18:35,879 - root - INFO - epoch: 12 lr rate :0.0001
+2020-05-13 13:18:35,880 - root - INFO - validation epoch: 12 lr rate :0.0001
+2020-05-13 13:18:37,349 - root - INFO - Epoch: 12, Validation Loss: 20.9547, Validation Regression Loss 5.3584, Validation Classification Loss: 15.5963
+2020-05-13 13:18:37,359 - root - INFO - Saved model ./models/RFB-Epoch-12-Loss-20.9547.pth
+.2020-05-13 13:18:38,182 - root - INFO - epoch: 13 lr rate :0.0001
+.2020-05-13 13:18:39,030 - root - INFO - epoch: 14 lr rate :0.0001
+2020-05-13 13:18:39,030 - root - INFO - validation epoch: 14 lr rate :0.0001
+2020-05-13 13:18:40,468 - root - INFO - Epoch: 14, Validation Loss: 20.5410, Validation Regression Loss 5.3359, Validation Classification Loss: 15.2051
+2020-05-13 13:18:40,478 - root - INFO - Saved model ./models/RFB-Epoch-14-Loss-20.5410.pth
+.2020-05-13 13:18:41,367 - root - INFO - epoch: 15 lr rate :0.0001
+.2020-05-13 13:18:42,249 - root - INFO - epoch: 16 lr rate :0.0001
+2020-05-13 13:18:42,249 - root - INFO - validation epoch: 16 lr rate :0.0001
+2020-05-13 13:18:43,709 - root - INFO - Epoch: 16, Validation Loss: 20.0893, Validation Regression Loss 5.3131, Validation Classification Loss: 14.7761
+2020-05-13 13:18:43,719 - root - INFO - Saved model ./models/RFB-Epoch-16-Loss-20.0893.pth
+.2020-05-13 13:18:44,611 - root - INFO - epoch: 17 lr rate :0.0001
+.2020-05-13 13:18:45,443 - root - INFO - epoch: 18 lr rate :0.0001
+2020-05-13 13:18:45,443 - root - INFO - validation epoch: 18 lr rate :0.0001
+2020-05-13 13:18:46,910 - root - INFO - Epoch: 18, Validation Loss: 19.6318, Validation Regression Loss 5.2898, Validation Classification Loss: 14.3420
+2020-05-13 13:18:46,920 - root - INFO - Saved model ./models/RFB-Epoch-18-Loss-19.6318.pth
+.2020-05-13 13:18:47,804 - root - INFO - epoch: 19 lr rate :0.0001
+.2020-05-13 13:18:48,635 - root - INFO - epoch: 20 lr rate :0.0001
+2020-05-13 13:18:48,635 - root - INFO - validation epoch: 20 lr rate :0.0001
+2020-05-13 13:18:50,089 - root - INFO - Epoch: 20, Validation Loss: 19.1468, Validation Regression Loss 5.2659, Validation Classification Loss: 13.8808
+2020-05-13 13:18:50,098 - root - INFO - Saved model ./models/RFB-Epoch-20-Loss-19.1468.pth
+.2020-05-13 13:18:50,997 - root - INFO - epoch: 21 lr rate :0.0001

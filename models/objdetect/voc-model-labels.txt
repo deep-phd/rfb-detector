@@ -1,0 +1,8 @@
+BACKGROUND
+airplane
+bicycle
+bird
+boat
+car
+motorcycle
+tiger
