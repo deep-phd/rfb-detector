@@ -2,7 +2,7 @@
 
 模型以 [Ultra-Light-Fast-Generic-Face-Detector-1MB](https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB)， 为基础进行训练。标注了2268张训练图片和255张验证图片。
 
-![检测结果](https://github.com/deep-phd/rfb-detector/blob/master/readme_imgs/result_1.jpg"检测结果")
+![检测结果](https://github.com/deep-phd/rfb-detector/blob/master/readme_imgs/result_1.jpg?raw=true)
 
 ### 训练环境
 + Ubuntu16.04、Ubuntu18.04
